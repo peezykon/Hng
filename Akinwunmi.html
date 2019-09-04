@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resume</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <center>
@@ -67,5 +68,47 @@
             <td>https://github.com/peezykon/chegg</td>
         </tr>
     </table>
+    <form>
+        <table id="contactme" cellspacing="15">
+            <tr class="form-group">
+                <td>
+                    <h2>Contact Me</h2>
+                </td>
+            </tr>
+            <tr class="form-group">
+                <td>
+                    <input type="text" name="fullname" class="form-control" id="fullname" placeholder="Enter Fullname"
+                        required="" />
+                    <p class="blue hide" id="fullnameError">Name should be more than 4 characters</p>
+                </td>
+            </tr>
+            <tr class="form-group">
+                <td>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter Email Address"
+                        required="" />
+                    <p class="blue hide" id="emailError">Email is Invalid</p>
+                </td>
+            </tr>
+            <tr class="form-group">
+                <td>
+                    <input type="text" name="title" id="title" class="form-control" placeholder="Enter Title" required="" />
+                    <p class="blue hide" id="titleError">Title should be more than 4 characters</p>
+                </td>
+            </tr>
+            <tr class="form-group">
+                <td>
+                    <textarea name="message" id="message" cols="30" rows="3" placeholder="Enter Message"
+                        class="form-control" required=""></textarea>
+                    <p class="blue hide" id="messageError">Message should be more than 20 characters</p>
+                </td>
+            </tr>
+            <tr class="form-group">
+                <td>
+                    <button id="submitButton" onclick="validate()">Contact</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
 </body>
 </html>
