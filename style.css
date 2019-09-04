@@ -91,7 +91,7 @@ textarea{
     width: 100%;
 }
 
-#submitButton{
+.btn-green{
     background: green;
     border: 1px solid green;
     padding: 10px;
@@ -105,4 +105,11 @@ textarea{
 .blue
 {
     color: blue
+}
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
 }

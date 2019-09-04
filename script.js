@@ -1,4 +1,5 @@
-//  email
+
+// validate email
 const validateEmail = (e) => {
     var email = document.getElementById('email').value;
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -13,7 +14,8 @@ const validateEmail = (e) => {
 }
 const log = document.getElementById('email');
 log.addEventListener('keyup', validateEmail);
-// name
+
+// validate name
 const validateFullname = (e) => {
     var fullname = document.getElementById('fullname').value;
     if (fullname.length < 4) {
@@ -26,7 +28,8 @@ const validateFullname = (e) => {
 }
 const fullName = document.getElementById('fullname');
 fullName.addEventListener('keyup', validateFullname);
-//title
+
+// validate title
 const validateTitle = (e) => {
     var title = document.getElementById('title').value;
     if (title.length < 4) {
@@ -39,7 +42,8 @@ const validateTitle = (e) => {
 }
 const titleEvent = document.getElementById('title');
 titleEvent.addEventListener('keyup', validateTitle);
-// message
+
+// validate message
 const validateMessage = (e) => {
     var message = document.getElementById('message').value;
     if (message.length < 20) {
@@ -52,6 +56,7 @@ const validateMessage = (e) => {
 }
 const messageEvent = document.getElementById('message');
 messageEvent.addEventListener('keyup', validateMessage);
+
 function validate() {
     if (validateFullname || validateEmail || validateTitle || validateMessage) {
         alert('fix errors');
