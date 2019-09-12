@@ -59,9 +59,10 @@ messageEvent.addEventListener('keyup', validateMessage);
 
 function validate() {
     if (validateFullname || validateEmail || validateTitle || validateMessage) {
-        alert('fix errors');
-    } else {
+       
         alert('Loading....');
         console.log('yes');
+    } else {
+        alert('fix errors');
     }
 }
